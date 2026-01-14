@@ -1,0 +1,128 @@
+* { margin:0; padding:0; box-sizing:border-box }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg,#020617,#0f172a);
+  color: #e5e7eb;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  z-index: 100;
+}
+
+nav h1 { color:#38bdf8 }
+
+nav ul { list-style:none; display:flex; gap:25px }
+
+nav a { color:white; text-decoration:none; transition:.3s }
+nav a:hover { color:#38bdf8 }
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero span { color:#38bdf8 }
+
+.btn {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 50px;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover { transform: scale(1.05) }
+
+.section {
+  padding: 80px 60px;
+}
+
+.grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background:#020617;
+  padding: 25px;
+  border-radius: 20px;
+  text-align:center;
+  transition:.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(56,189,248,.2);
+}
+
+.project h3 { color:#38bdf8 }
+
+footer {
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  margin-top:60px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #38bdf8;
+  margin-bottom: 25px;
+  box-shadow: 0 0 40px rgba(56,189,248,.8);
+  animation: float 5s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.08);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 80px 20px;
+}
+
+.hero-text {
+  max-width: 420px;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+}
+
+.hero-text p {
+  margin-top: 12px;
+  line-height: 1.6;
+}
